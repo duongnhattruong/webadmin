@@ -356,8 +356,19 @@
 </template>
 
 
-<script setup lang="ts">
-import { vehicleOwnerData } from '../fake_data/VehicleOwnerData'
-import Breadcrumb from '../partials/Breadcrumb.vue'
-const users = vehicleOwnerData()
-</script>
+<script>
+import  API from '../API/API.ts'
+//import Breadcrumb from '../partials/Breadcrumb.vue'
+export default {
+  name: "vehicle-data",
+  data(){
+    return {
+      users: null
+    }
+  },
+  async mounted(){
+  const response = await API.getVehicle();
+    this.users = response.data;
+  }
+}
+</script> 

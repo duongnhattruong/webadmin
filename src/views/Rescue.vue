@@ -355,8 +355,20 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { rescueData } from '../fake_data/RescueData'
-import Breadcrumb from '../partials/Breadcrumb.vue'
-const users = rescueData()
-</script>
+
+<script>
+import  API from '../API/API.ts'
+//import Breadcrumb from '../partials/Breadcrumb.vue'
+export default {
+  name: "rescue-data",
+  data(){
+    return {
+      users: null
+    }
+  },
+  async mounted(){
+  const response = await API.getRescue();
+    this.users = response.data;
+  }
+}
+</script> 
