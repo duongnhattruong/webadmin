@@ -267,7 +267,7 @@
                 <td
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
-                  <span
+                <span v-if="u.status==1"
                     class="
                       inline-flex
                       px-2
@@ -278,22 +278,24 @@
                       bg-green-100
                       rounded-full
                     "
-                    >{{ u.status }}</span
+                    >
+                    Hoạt động</span
                   >
-                </td>
 
-                <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
-                >
-                  {{ u.address }}
+                  <span v-if="u.status==0"
+                    class="
+                      inline-flex
+                      px-2
+                      text-xs
+                      font-semibold
+                      leading-5
+                      text-red-800
+                      bg-red-100
+                      rounded-full
+                    "
+                    >
+                    Ngừng</span
+                  >
                 </td>
 
                 <td
@@ -327,8 +329,8 @@
                           />
                         </svg>
                       </a>
-                      <form method="POST">
-                        <button class="mx-2 px-2 rounded-md">
+                      <form>
+                        <button class="mx-2 px-2 rounded-md" @click="handleDelete(u)">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5 text-red-700"
@@ -369,6 +371,12 @@ export default {
   async mounted(){
   const response = await API.getVehicle();
     this.users = response.data;
+  },
+  methods: {
+    handleDelete(u){
+      u.status = "0";
+      API.deleteVehicle(u.id, u);
+}
   }
 }
 </script> 

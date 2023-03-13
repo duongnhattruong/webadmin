@@ -11,4 +11,12 @@ export default {
   getVehicle() {
     return axios.get(API_URL + '/vehicle');
   },
+
+  deleteRescue(id: string, user: any) {
+    return axios.put(API_URL + '/rescue/'+id, user);
+  },
+
+  deleteVehicle(id: string, user: any) {
+    return axios.put(API_URL + '/vehicle/'+id, user);
+  },
 }
