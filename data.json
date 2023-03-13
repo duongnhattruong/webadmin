@@ -16,7 +16,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -26,7 +26,7 @@
       "email": "bien@gmail.com",
       "phone": "0389047382",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg"
     },
@@ -36,7 +36,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047383",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -56,7 +56,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
-      "status": "1",
+      "status": "0",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -94,22 +94,22 @@
   "vehicle": [
     {
       "id": 1,
-      "name": "Nhật Trường 99",
-      "email": "truong@gmail.com",
-      "phone": "0389047388",
+      "name": "Nhật Biên 001",
+      "email": "bien@gmail.com",
+      "phone": "0559047543",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
-      "address": "122 Sóc Trăng, Việt Nam",
-      "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
+      "status": "1",
+      "address": "Mỹ Tú, Sóc Trăng, Việt Nam",
+      "avatar": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg"
     },
     {
       "id": 2,
-      "name": "Nhật Trường 96767",
+      "name": "Nhật Trường Dương",
       "email": "truong@gmail.com",
       "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
       "status": "1",
-      "address": "122 Sóc Trăng, Việt Nam",
+      "address": "Đường An Dương Vương, Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
     {
@@ -118,7 +118,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047382",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -138,7 +138,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047383",
       "password": "passwordaushdfasdfasd",
-      "status": "1",
+      "status": "0",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -164,12 +164,12 @@
     },
     {
       "id": 8,
-      "name": "Nhật Trường 3",
+      "name": "Nhật Trường Dương",
       "email": "truong@gmail.com",
-      "phone": "0389047382",
+      "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
-      "address": "122 Sóc Trăng, Việt Nam",
+      "status": "1",
+      "address": "Đường An Dương Vương, Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
     {
@@ -192,5 +192,102 @@
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     }
+  ],
+  "thongke-r": {
+    "month": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "value": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      26,
+      27,
+      48,
+      49,
+      60,
+      71,
+      82
+    ]
+  },
+  "thongke-v": {
+    "month": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "value": [
+      15,
+      20,
+      35,
+      40,
+      45,
+      46,
+      47,
+      48,
+      49,
+      60,
+      91,
+      102
+    ]
+  },
+  "thongke-don": {
+    "month": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "value": [
+      15,
+      10,
+      35,
+      20,
+      5,
+      46,
+      7,
+      38,
+      29,
+      10,
+      1,
+      52
+    ]
+  },
+  "thongke-dg": [
+    346,
+    40,
+    32,
+    34,
+    3
   ]
 }

@@ -44,7 +44,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">88</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ sum }}</h4>
               <div class="text-gray-500">Tổng cộng</div>
             </div>
           </div>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">50</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ statusTrue }}</h4>
               <div class="text-gray-500">Đang hoạt động</div>
             </div>
           </div>
@@ -134,7 +134,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">38</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ sum - statusTrue }}</h4>
               <div class="text-gray-500">Ngừng hoạt động</div>
             </div>
           </div>
@@ -297,7 +297,19 @@
                     Ngừng</span
                   >
                 </td>
-
+                <td
+                  class="
+                    px-6
+                    py-4
+                    text-sm
+                    leading-5
+                    text-gray-500
+                    border-b border-gray-200
+                    whitespace-nowrap
+                  "
+                >
+                  {{ u.address }}
+                </td>
                 <td
                   class="
                     px-6
@@ -365,12 +377,19 @@ export default {
   name: "vehicle-data",
   data(){
     return {
-      users: null
+      users: null,
+      statusTrue: 0
     }
   },
   async mounted(){
   const response = await API.getVehicle();
     this.users = response.data;
+    this.sum = this.users.length;
+    for (var i in this.users)
+    {
+      if (this.users[i].status == "1") 
+         this.statusTrue++ ;
+    }
   },
   methods: {
     handleDelete(u){

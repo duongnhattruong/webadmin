@@ -44,7 +44,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">300</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ sum }}</h4>
               <div class="text-gray-500">Tổng cộng</div>
             </div>
           </div>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">290</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ statusTrue }}</h4>
               <div class="text-gray-500">Đang hoạt động</div>
             </div>
           </div>
@@ -134,7 +134,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">10</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">{{ sum - statusTrue }}</h4>
               <div class="text-gray-500">Ngừng hoạt động</div>
             </div>
           </div>
@@ -381,12 +381,19 @@ export default {
   name: "rescue-data",
   data(){
     return {
-      users: null
+      users: null,
+      statusTrue: 0
     }
   },
   async mounted(){
   const response = await API.getRescue();
     this.users = response.data;
+    this.sum = this.users.length;
+    for (var i in this.users)
+    {
+      if (this.users[i].status == "1") 
+         this.statusTrue++ ;
+    }
   },
   methods: {
     handleDelete(u){

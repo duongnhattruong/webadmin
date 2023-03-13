@@ -19,4 +19,20 @@ export default {
   deleteVehicle(id: string, user: any) {
     return axios.put(API_URL + '/vehicle/'+id, user);
   },
+
+  getThongKeR() {
+    return axios.get(API_URL + '/thongke-r');
+  },
+
+  getThongKeV() {
+    return axios.get(API_URL + '/thongke-v');
+  },
+
+  getThongKeDon() {
+    return axios.get(API_URL + '/thongke-don');
+  },
+
+  getThongKeDanhGia() {
+    return axios.get(API_URL + '/thongke-dg');
+  },
 }

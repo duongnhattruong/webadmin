@@ -30,8 +30,8 @@
 
 <script setup lang="ts">
 import Breadcrumb from "../partials/Breadcrumb.vue";
-import DonutChart from "@/components/charts/DonutChart.vue";
-import LineChart from "@/components/charts/LineChart.vue";
-import BarChart from "../components/charts/BarChart.vue";
-import AreaChart from "../components/charts/AreaChart.vue";
+import DonutChart from "@/components/charts/ThongKeDanhGia.vue";
+import LineChart from "@/components/charts/ThongKeDon.vue";
+import BarChart from "../components/charts/ThongKeVehicle.vue";
+import AreaChart from "../components/charts/ThongkeRescue.vue";
 </script>
