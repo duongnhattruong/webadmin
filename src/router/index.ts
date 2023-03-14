@@ -4,6 +4,8 @@ import Login from "../views/Login.vue";
 import Chart from "../views/ChartView.vue";
 import NotFound from "../views/NotFound.vue";
 import Rescue from "../views/Rescue.vue";
+import AddRescue from "../views/AddRescue.vue";
+import AddVehicle from "../views/AddVehicle.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -27,6 +29,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/charts",
     name: "Chart",
     component: Chart,
+  },
+  {
+    path: "/add-rescue",
+    name: "AddRescue",
+    component: AddRescue,
+  },
+  {
+    path: "/add-vehicle",
+    name: "AddVehicle",
+    component: AddVehicle,
   },
   { path: "/:pathMatch(.*)*", component: NotFound },
 ];

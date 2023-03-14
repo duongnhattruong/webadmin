@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 const API_URL = 'http://localhost:3000';
 
 export default {
@@ -18,6 +18,14 @@ export default {
 
   deleteVehicle(id: string, user: any) {
     return axios.put(API_URL + '/vehicle/'+id, user);
+  },
+
+  addRescue(user: any) {
+    return axios.post(API_URL + '/rescue/', user);
+  },
+
+  addVehicle(user: any) {
+    return axios.post(API_URL + '/vehicle/', user);
   },
 
   getThongKeR() {

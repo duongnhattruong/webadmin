@@ -142,9 +142,16 @@
       </div>
     </div>
 
-    <div class="mt-8"></div>
-
-    <div class="flex flex-col mt-8">
+    <div class="mt-4"></div>
+    <div style="text-align: right;">
+    <router-link 
+          to="/add-vehicle"
+          class="bg-gradient-to-r from-purple-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-semibold px-6 py-2 rounded-md mr-6"
+        >
+          Thêm tài khoản
+    </router-link>
+    </div>
+    <div class="flex flex-col mt-4">
       <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div
           class="
