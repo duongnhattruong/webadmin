@@ -331,7 +331,7 @@
                 >
                   <div class="flex justify-around">
                     <span class="text-yellow-500 flex justify-center">
-                      <a href="#" class="mx-2 px-2 rounded-md"
+                      <router-link to="/edit-vehicle" class="mx-2 px-2 rounded-md"  @click="handleEdit(u)"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="h-5 w-5 text-green-700"
@@ -347,7 +347,7 @@
                             clip-rule="evenodd"
                           />
                         </svg>
-                      </a>
+                      </router-link>
                       <form>
                         <button class="mx-2 px-2 rounded-md" @click="handleDelete(u)">
                           <svg
@@ -402,6 +402,17 @@ export default {
     handleDelete(u){
       u.status = "0";
       API.deleteVehicle(u.id, u);
+},
+
+handleEdit(u){
+     localStorage.setItem('name', u.name);
+     localStorage.setItem('id', u.id);
+     localStorage.setItem('phone', u.phone);
+     localStorage.setItem('password', u.password);
+     localStorage.setItem('address', u.address);
+     localStorage.setItem('status', u.status);
+     localStorage.setItem('email', u.email);
+     localStorage.setItem('avatar', u.avatar);
 }
   }
 }

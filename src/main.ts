@@ -9,5 +9,6 @@ import router from "./router";
 const app = createApp(App);
 app.component("default-layout", DashboardLayout);
 app.component("empty-layout", EmptyLayout);
+app.config.globalProperties.$globalVariable = 'Jimmy';
 
 app.use(router).use(VueApexCharts).mount("#app");

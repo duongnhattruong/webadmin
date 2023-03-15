@@ -6,7 +6,7 @@
       "email": "truong@gmail.com",
       "phone": "0389047388",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -16,18 +16,18 @@
       "email": "truong@gmail.com",
       "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
     {
       "id": 4,
-      "name": "Nhật Biên 3",
-      "email": "bien@gmail.com",
-      "phone": "0389047382",
+      "name": "Nhật Biên 30",
+      "email": "bien30@gmail.com",
+      "phone": "0389047330",
       "password": "passwordaushdfasdfasd",
       "status": "1",
-      "address": "122 Sóc Trăng, Việt Nam",
+      "address": "130 Sóc Trăng, Việt Nam",
       "avatar": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg"
     },
     {
@@ -256,7 +256,7 @@
       "id": 1,
       "name": "Nhật Biên 001",
       "email": "bien@gmail.com",
-      "phone": "0559047543",
+      "phone": "0559047542",
       "password": "passwordaushdfasdfasd",
       "status": "1",
       "address": "Mỹ Tú, Sóc Trăng, Việt Nam",
@@ -278,13 +278,13 @@
       "email": "truong@gmail.com",
       "phone": "0389047382",
       "password": "passwordaushdfasdfasd",
-      "status": "0",
+      "status": "1",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
     {
       "id": 4,
-      "name": "Nhật Biên 3",
+      "name": "Nhật Biên 30",
       "email": "bien@gmail.com",
       "phone": "0389047382",
       "password": "passwordaushdfasdfasd",
@@ -376,7 +376,7 @@
       "id": 447397,
       "name": "rr",
       "email": "",
-      "phone": "",
+      "phone": "888",
       "password": "",
       "status": "1",
       "address": "",
@@ -399,6 +399,36 @@
       "phone": "",
       "password": "",
       "status": "1",
+      "address": "",
+      "avatar": ""
+    },
+    {
+      "id": "Nhật Trường 4",
+      "name": "Nhật Trường 5",
+      "email": "truong@gmail.com",
+      "phone": "0389047383",
+      "password": "passwordaushdfasdfasd",
+      "status": "0",
+      "address": "122 Sóc Trăng, Việt Nam",
+      "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
+    },
+    {
+      "id": "Nhật Trường 567",
+      "name": "Nhật Trường 3333",
+      "email": "truong@gmail.com",
+      "phone": "0389047382",
+      "password": "passwordaushdfasdfasd",
+      "status": "0",
+      "address": "122 Sóc Trăng, Việt Nam",
+      "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
+    },
+    {
+      "id": 149370,
+      "name": "rer",
+      "email": "",
+      "phone": "",
+      "password": "",
+      "status": "0",
       "address": "",
       "avatar": ""
     }

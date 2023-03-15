@@ -2,7 +2,7 @@
     <div>
     
       <div class="mt-2">
-        <h4 class="text-lg font-semibold text-blue-700">Thêm mới chủ phương tiện</h4>
+        <h4 class="text-lg font-semibold text-blue-700">Điều chỉnh chủ phương tiện</h4>
   
         
       </div>
@@ -52,7 +52,7 @@
                 </div>
   
                 <div>
-                  <label class="text-gray-900" 
+                  <label class="text-gray-900"
                     >Địa chỉ</label
                   >
                   <input
@@ -62,23 +62,23 @@
                   />
                 </div>
 
-                <div>
+                <!-- <div>
                   <label class="text-gray-900" >Mật khẩu</label>
                   <input
                     class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                     type="password"
                     v-model="u.password"
                   />
-                </div>
+                </div> -->
   
                 <div>
                   <label class="text-gray-900" 
-                    >Gõ lại mật khẩu</label
+                    >Trạng thái</label
                   >
                   <input
                     class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
-                    type="password"
-              
+                    type="text"
+                    v-model="u.status"
                   />
                 </div>
               </div>
@@ -89,7 +89,7 @@
                 <button @click="open=true"
                   class="px-4 py-2 text-white-600 bg-green-500 rounded-md hover:bg-blue-400 focus:outline-none"
                 >
-                  Thêm
+                  Cập nhật
                 </button>
               </div>
           </div>
@@ -150,7 +150,7 @@
 
     
           <p>
-            Xác nhận thêm chủ phương tiện ?
+            Xác nhận điều chỉnh chủ phương tiện ?
           </p>
 
           
@@ -162,7 +162,7 @@
               Đóng
             </button>
             <button
-              @click="handleAddVehicle"
+              @click="handleEditVehicle"
               class="px-6 py-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:bg-lime-600"
             >
               Xác nhận
@@ -180,21 +180,23 @@ import { ref } from 'vue'
 
 var open = ref(false);
 const r = Math.floor(Math.random() * 1000000) + 34;
-const u = {
-      id: r,
-      name: "",
-      email: "",
-      phone: "",
-      password: "",
-      status: "1",
-      address: "",
-      avatar: ""
+let u = {
+      id: localStorage.getItem('id'),
+      name: localStorage.getItem('name'),
+      email: localStorage.getItem('email'),
+      phone: localStorage.getItem('phone'),
+      password: localStorage.getItem('password'),
+      status: localStorage.getItem('status'),
+      address: localStorage.getItem('address'),
+      avatar: localStorage.getItem('avatar')
 }
-    const handleAddVehicle = () =>{
-      API.addVehicle(u);
-      
+    const handleEditVehicle = () =>{
+      API.editVehicle(u.id, u); 
+     // console.log(u);
 }
   
+  console.log("okkkkkk");
+      
 </script> 
 
 <style>
