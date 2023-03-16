@@ -56,4 +56,8 @@ export default {
   getThongKeDanhGia() {
     return axios.get(API_URL + '/thongke-dg');
   },
+
+  getHistory(start: string, end: string) {
+    return axios.get(API_URL + '/history');
+  },
 }

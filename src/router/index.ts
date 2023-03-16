@@ -8,6 +8,7 @@ import AddRescue from "../views/AddRescue.vue";
 import AddVehicle from "../views/AddVehicle.vue";
 import EditVehicle from "../views/EditVehicle.vue";
 import EditRescue from "../views/EditRescue.vue";
+import History from "../views/History.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -51,6 +52,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/edit-rescue",
     name: "EditRescue",
     component: EditRescue,
+  },
+  {
+    path: "/history",
+    name: "History",
+    component: History,
   },
   { path: "/:pathMatch(.*)*", component: NotFound },
 ];
