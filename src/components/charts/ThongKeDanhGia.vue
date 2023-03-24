@@ -6,7 +6,7 @@
       :options="options"
       :series="series"
     ></apexchart>
-    <b>Tổng quan đánh giá</b>
+    <center> <b>Tổng quan đánh giá</b> </center>
   </div>
 </template>
 

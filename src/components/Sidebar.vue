@@ -131,7 +131,7 @@
           :class="[$route.name === 'History' ? activeClass : inactiveClass]"
           to="/history"
         >
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
             viewBox="0 0 20 20"
@@ -139,6 +139,16 @@
           >
             <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+          </svg> -->
+
+          <svg class="w-5 h-5 text-gray-500" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
 
           <span class="mx-4">Xem lịch sử</span>
@@ -149,7 +159,7 @@
           :class="[$route.name === 'Maintenance' ? activeClass : inactiveClass]"
           to="/maintenance"
         >
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
             viewBox="0 0 20 20"
@@ -159,7 +169,7 @@
             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
           </svg>
 
-          <span class="mx-4">Bảo trì</span>
+          <span class="mx-4">Bảo trì</span> -->
         </router-link>
       
         <!-- <p class="pl-4 text-xs my-2 font-semibold mb-4 text-gray-400">About</p> -->

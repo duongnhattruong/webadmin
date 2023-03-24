@@ -6,7 +6,7 @@
       :options="options"
       :series="series"
     ></apexchart>
-    <b>Số đơn trong tháng</b>
+    <center><b>Số đơn trong tháng</b></center>
   </div>
 </template>
 

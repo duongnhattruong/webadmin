@@ -6,7 +6,7 @@
       :options="options"
       :series="series"
     ></apexchart>
-    <b>Tổng số phương tiện đăng ký</b>
+    <center> <b>Tổng số phương tiện đăng ký</b> </center>
   </div>
 </template>
 

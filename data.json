@@ -12,11 +12,11 @@
     },
     {
       "id": 2,
-      "name": "Nhật Trường 2",
+      "name": "Nhật Trường 20000",
       "email": "truong@gmail.com",
       "phone": "0389047381",
       "password": "passwordaushdfasdfasd",
-      "status": "1",
+      "status": "0",
       "address": "122 Sóc Trăng, Việt Nam",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg"
     },
@@ -26,7 +26,7 @@
       "email": "bien30@gmail.com",
       "phone": "0389047330",
       "password": "passwordaushdfasdfasd",
-      "status": "1",
+      "status": "0",
       "address": "130 Sóc Trăng, Việt Nam",
       "avatar": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg"
     },
@@ -374,12 +374,12 @@
     },
     {
       "id": 447397,
-      "name": "rr",
-      "email": "",
+      "name": "tên",
+      "email": "ok@gmail.com",
       "phone": "888",
       "password": "",
       "status": "1",
-      "address": "",
+      "address": "vung tàu",
       "avatar": ""
     },
     {
@@ -388,7 +388,7 @@
       "email": "",
       "phone": "",
       "password": "",
-      "status": "1",
+      "status": "0",
       "address": "",
       "avatar": ""
     },
@@ -537,12 +537,10 @@
       "email": "truong@gmail.com",
       "phone": "0389047388",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg",
-
       "name_2": "Nhật Biên Flutter",
       "email_2": "bien@gmail.com",
       "phone_2": "033332234",
       "avatar_2": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg",
-
       "status": "1",
       "time": "15:32:43",
       "date": "15/3/2023",
@@ -555,12 +553,10 @@
       "email_2": "truong@gmail.com",
       "phone_2": "0389047388",
       "avatar_2": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg",
-
       "name": "Nhật Biên Golang",
       "email": "bien@gmail.com",
       "phone": "033332234",
       "avatar": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg",
-
       "status": "0",
       "time": "17:32:43",
       "date": "14/3/2023",
@@ -573,12 +569,10 @@
       "email": "truong2@gmail.com",
       "phone": "0389047377",
       "avatar": "https://cover-talk.zadn.vn/c/c/6/6/10/31b1bd1f591981a1b9a8e3efd5c710f7.jpg",
-
       "name_2": "Nhật Biên Vue",
       "email_2": "bienvue@gmail.com",
       "phone_2": "000000034",
       "avatar_2": "https://zpsocial-f52-org.zadn.vn/a72fa7af297cc7229e6d.jpg",
-
       "status": "1",
       "time": "14:32:43",
       "date": "15/4/2023",
