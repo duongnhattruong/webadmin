@@ -27,7 +27,7 @@
                   <input
                     class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                     type="text"
-                    v-model="u.name"
+                    v-model="u.fullname"
                   />
                 </div>
   
@@ -59,6 +59,26 @@
                     class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-800 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                     type="text"
                     v-model="u.address"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-gray-900">Tuổi</label>
+                  <input
+                    class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                    type="phone"
+                    v-model="u.age_"
+                  />
+                </div>
+  
+                <div>
+                  <label class="text-gray-900" 
+                    >Tên đăng nhập</label
+                  >
+                  <input
+                    class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-800 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                    type="text"
+                    v-model="u.username"
                   />
                 </div>
 
@@ -181,16 +201,19 @@ import { ref } from 'vue'
 var open = ref(false);
 const r = Math.floor(Math.random() * 1000000) + 34;
 const u = {
-      id: r,
-      name: "",
+      username: "",
+      fullname: "",
+      age_: "",
+      age: 0,
       email: "",
       phone: "",
       password: "",
-      status: "1",
       address: "",
       avatar: ""
 }
     const handleAddVehicle = () =>{
+      console.log(u);
+      u.age = parseInt(u.age_);
       API.addVehicle(u);
       
 }

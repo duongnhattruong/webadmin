@@ -251,7 +251,7 @@
 
                     <div class="ml-4">
                       <div class="text-sm font-medium leading-5 text-gray-900">
-                        {{ u.name }}
+                        {{ u.full_name }}
                       </div>
                       <div class="text-sm leading-5 text-gray-500">
                         {{ u.email }}
@@ -289,7 +289,7 @@
                     Hoạt động</span
                   >
 
-                  <span v-if="u.status==0"
+                  <span v-if="u.status!=1"
                     class="
                       inline-flex
                       px-2
@@ -405,7 +405,7 @@ export default {
 },
 
 handleEdit(u){
-     localStorage.setItem('name', u.name);
+     localStorage.setItem('full_name', u.full_name);
      localStorage.setItem('id', u.id);
      localStorage.setItem('phone', u.phone);
      localStorage.setItem('password', u.password);

@@ -1,16 +1,17 @@
 import axios from "axios";
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:3001/api/v1/admin';
+const API_USER = 'http://localhost:3001/api/v1/user';
 
 
 export default {
   name: "api-app",
 
   getRescue() {
-    return axios.get(API_URL + '/rescue');
+    return axios.get(API_URL + '/rescue');    //                ok  ------------------------
   },
 
   getVehicle() {
-    return axios.get(API_URL + '/vehicle');
+    return axios.get(API_URL + '/vehicle');   //                ok  ------------------------
   },
 
   getVehicleById(id: string) {
@@ -38,7 +39,7 @@ export default {
   },
 
   addVehicle(user: any) {
-    return axios.post(API_URL + '/vehicle/', user);
+    return axios.post(API_USER + '/signup', user);   //                ok  ------------------------
   },
 
   getThongKeR() {
