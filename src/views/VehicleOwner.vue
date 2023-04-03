@@ -401,7 +401,7 @@ export default {
   methods: {
     handleDelete(u){
       u.status = "0";
-      API.deleteVehicle(u.id, u);
+      API.deleteVehicle({ User_Id: u.id});
 },
 
 handleEdit(u){
@@ -410,9 +410,14 @@ handleEdit(u){
      localStorage.setItem('phone', u.phone);
      localStorage.setItem('password', u.password);
      localStorage.setItem('address', u.address);
-     localStorage.setItem('status', u.status);
+     if(u.status!=1)
+        localStorage.setItem('status', 0);
+     else
+        localStorage.setItem('status', 1);
      localStorage.setItem('email', u.email);
      localStorage.setItem('avatar', u.avatar);
+     localStorage.setItem('age', u.age);
+     localStorage.setItem('username', u.username);
 }
   }
 }

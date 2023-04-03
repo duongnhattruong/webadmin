@@ -1,6 +1,7 @@
 import axios from "axios";
 const API_URL = 'http://localhost:3001/api/v1/admin';
 const API_USER = 'http://localhost:3001/api/v1/user';
+const API_RES = 'http://localhost:3001/api/v1/rescue-unit';
 
 
 export default {
@@ -18,16 +19,16 @@ export default {
     return axios.get(API_URL + '/vehicle/'+id);
   },
 
-  deleteRescue(id: string, user: any) {
-    return axios.put(API_URL + '/rescue/'+id, user);
+  deleteRescue(user: any) {
+    return axios.put(API_URL + '/rescue', user);    //                ok  ------------------------
   },
 
-  deleteVehicle(id: string, user: any) {
-    return axios.put(API_URL + '/vehicle/'+id, user);
+  deleteVehicle(user_id: any) {
+    return axios.put(API_URL + '/vehicle', user_id);   //           ok       ------------------------
   },
 
-  editVehicle(id: string, user: any) {
-    return axios.put(API_URL + '/vehicle/'+id, user);
+  editVehicle(user: any) {
+    return axios.put(API_URL + '/update', user);
   },
 
   editRescue(id: string, user: any) {
@@ -35,7 +36,7 @@ export default {
   },
 
   addRescue(user: any) {
-    return axios.post(API_URL + '/rescue/', user);
+    return axios.post(API_RES + '/signup', user);   //                ok  ------------------------
   },
 
   addVehicle(user: any) {

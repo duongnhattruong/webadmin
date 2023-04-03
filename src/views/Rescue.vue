@@ -244,7 +244,7 @@
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
                         class="w-10 h-10 rounded-full"
-                        :src="u.avatar"
+                        src="https://png.pngtree.com/template/20190323/ourmid/pngtree-robot-logo-design-robot-logo-design-image_82095.jpg"
                         alt=""
                       />
                     </div>
@@ -266,9 +266,9 @@
                   <div class="text-sm leading-5 text-gray-900">
                     {{ u.phone }}
                   </div>
-                  <div class="text-sm leading-5 text-gray-500">
+                  <!-- <div class="text-sm leading-5 text-gray-500">
                     {{ u.password }}
-                  </div>
+                  </div> -->
                 </td>
 
                 <td
@@ -289,7 +289,7 @@
                     Hoạt động</span
                   >
 
-                  <span v-if="u.status==0"
+                  <span v-if="!u.status==1"
                     class="
                       inline-flex
                       px-2
@@ -404,8 +404,7 @@ export default {
   },
   methods: {
     handleDelete(u){
-      u.status = "0";
-      API.deleteRescue(u.id, u);
+      API.deleteRescue({ User_Id: u.id});
 },
 handleEdit(u){
      localStorage.setItem('name', u.name);

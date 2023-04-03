@@ -209,10 +209,11 @@ const u = {
       phone: "",
       password: "",
       address: "",
-      avatar: ""
+      status: 1,
+      avatar: "https://png.pngtree.com/png-clipart/20200710/original/pngtree-robot-logo-design-robot-logo-design-png-image_4148265.jpg"
 }
     const handleAddVehicle = () =>{
-      console.log(u);
+      //console.log(u);
       u.age = parseInt(u.age_);
       API.addVehicle(u);
       
