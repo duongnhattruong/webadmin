@@ -70,7 +70,19 @@
                     v-model="u.password"
                   />
                 </div> -->
-  
+                
+                <div>
+                  <label class="text-gray-900" 
+                    >Loại</label
+                  >
+                  <select class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-800 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                  v-model="u.type" > 
+                    <option value="1">Xe ô tô</option>
+                    <option value="2">Xe máy</option>
+                    
+                  </select> 
+                </div>
+
                 <div>
                   <label class="text-gray-900" 
                     >Trạng thái</label
@@ -78,7 +90,7 @@
                   <input
                     class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                     type="text"
-                    v-model="u.status"
+                    v-model="u.status_"
                   />
                 </div>
               </div>
@@ -179,19 +191,24 @@ import  API from '../API/API'
 import { ref } from 'vue'
 
 var open = ref(false);
-const r = Math.floor(Math.random() * 1000000) + 34;
+
 let u = {
       id: localStorage.getItem('id'),
       name: localStorage.getItem('name'),
       email: localStorage.getItem('email'),
       phone: localStorage.getItem('phone'),
       password: localStorage.getItem('password'),
-      status: localStorage.getItem('status'),
+      status_: localStorage.getItem('status'),
+      status: 0,
       address: localStorage.getItem('address'),
-      avatar: localStorage.getItem('avatar')
+      type: localStorage.getItem('type')
+      // lat: localStorage.getItem('lat'),
+      // lng: localStorage.getItem('lng')
 }
     const handleEditRescue = () =>{
-      API.editRescue(u.id, u); 
+      u.status = parseInt(u.status_);
+      console.log(u);
+      API.editRescue(u); 
      // console.log(u);
 }
   

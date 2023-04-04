@@ -267,7 +267,7 @@
                     {{ u.phone }}
                   </div>
                   <div class="text-sm leading-5 text-gray-500">
-                    {{ u.password }}
+                    {{ u.username }}
                   </div>
                 </td>
 

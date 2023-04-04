@@ -28,11 +28,11 @@ export default {
   },
 
   editVehicle(user: any) {
-    return axios.put(API_URL + '/update', user);
+    return axios.put(API_URL + '/update', user);    //           ok       ------------------------
   },
 
-  editRescue(id: string, user: any) {
-    return axios.put(API_URL + '/rescue/'+id, user);
+  editRescue(user: any) {
+    return axios.put(API_URL + '/updateR', user);
   },
 
   addRescue(user: any) {
