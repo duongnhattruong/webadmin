@@ -151,20 +151,20 @@
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
                         class="w-10 h-10 rounded-full"
-                        :src="u.avatar"
+                        :src="u.user.avatar"
                         alt=""
                       />
                     </div>
 
                     <div class="ml-4">
                       <div class="text-sm font-medium leading-5 text-gray-900">
-                        {{ u.name }}
+                        {{ u.user.full_name }}
                       </div>
                       <div class="text-sm leading-5 text-gray-500">
-                        {{ u.phone }}
+                        {{ u.user.phone }}
                       </div>
                       <div class="text-sm leading-5 text-gray-500">
-                        {{ u.email }}
+                        {{ u.user.email }}
                       </div>
                     </div>
                   </div>
@@ -177,20 +177,21 @@
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
                         class="w-10 h-10 rounded-full"
-                        :src="u.avatar_2"
+                       
+                        src="https://png.pngtree.com/template/20190323/ourmid/pngtree-robot-logo-design-robot-logo-design-image_82095.jpg"
                         alt=""
                       />
                     </div>
 
                     <div class="ml-4">
                       <div class="text-sm font-medium leading-5 text-gray-900">
-                        {{ u.name_2 }}
+                        {{ u.rescue_unit.name }}
                       </div>
                       <div class="text-sm leading-5 text-gray-500">
-                        {{ u.phone_2 }}
+                        {{ u.rescue_unit.phone }}
                       </div>
                       <div class="text-sm leading-5 text-gray-500">
-                        {{ u.email_2 }}
+                        {{ u.rescue_unit.email }}
                       </div>
                       
                     </div>
@@ -217,10 +218,11 @@
                   >
 
                   <div v-if="u.status==1" class="text-sm px-5 font-medium leading-5 text-red-500">
-                        {{ u.rating }}
+                        <!-- {{ u.rating }} -->
+                        5 sao
                       </div>
 
-                  <span v-if="u.status==0"
+                  <span v-if="u.status!=1"
                     class="
                       inline-flex
                       px-2
@@ -249,7 +251,7 @@
                     whitespace-nowrap
                   "
                 >
-                  {{ u.time }}
+                  {{ u.created_at }}
                   <div class="text-sm leading-5 text-gray-500">
                         {{ u.date }}
                   </div>
@@ -301,7 +303,7 @@ export default {
   methods: {
     async handleDate(){
       const response = await API.getHistory(this.start, this.end);
-      this.users = response.data;
+      this.users = response.data.data;
     }
   }
 }

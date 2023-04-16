@@ -34,12 +34,12 @@ export default {
     const response = await API.getThongKeR();
     this.series = [
         {
-          data: response.data.value,
+          data: response.data.data.value,
         },
       ];
     this.options = {
       xaxis:{
-        categories: response.data.month,
+        categories: response.data.data.month,
       }
     }
   },

@@ -2,6 +2,7 @@ import axios from "axios";
 const API_URL = 'http://localhost:3001/api/v1/admin';
 const API_USER = 'http://localhost:3001/api/v1/user';
 const API_RES = 'http://localhost:3001/api/v1/rescue-unit';
+const API_STAT = 'http://localhost:3001/api/v1/stats';
 
 
 export default {
@@ -44,15 +45,15 @@ export default {
   },
 
   getThongKeR() {
-    return axios.get(API_URL + '/thongke-r');
+    return axios.get(API_STAT + '/rescue');
   },
 
   getThongKeV() {
-    return axios.get(API_URL + '/thongke-v');
+    return axios.get(API_STAT + '/vehicle');
   },
 
   getThongKeDon() {
-    return axios.get(API_URL + '/thongke-don');
+    return axios.get(API_STAT + '/order');
   },
 
   getThongKeDanhGia() {
@@ -60,6 +61,6 @@ export default {
   },
 
   getHistory(start: string, end: string) {
-    return axios.get(API_URL + '/history');
+    return axios.get(API_STAT + '/order-by-date?startDate=' + start + '&endDate=' + end);
   },
 }
