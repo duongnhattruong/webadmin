@@ -93,6 +93,17 @@
                     v-model="u.status_"
                   />
                 </div>
+
+                <div>
+                  <label class="text-gray-900" 
+                    >Ảnh đại diện</label
+                  >
+                  <input
+                    class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-800 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                    type="text"
+                    v-model="u.avatar"
+                  />
+                </div>
               </div>
               
             
@@ -198,6 +209,7 @@ let u = {
       email: localStorage.getItem('email'),
       phone: localStorage.getItem('phone'),
       password: localStorage.getItem('password'),
+      avatar: localStorage.getItem('avatar'),
       status_: localStorage.getItem('status'),
       status: 0,
       address: localStorage.getItem('address'),

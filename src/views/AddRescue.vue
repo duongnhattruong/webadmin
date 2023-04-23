@@ -80,7 +80,16 @@
                     
                   </select> 
                 </div>
-
+                <div>
+                  <label class="text-gray-900" 
+                    >Ảnh đại diện</label
+                  >
+                  <input
+                    class="w-full px-2 py-2 mt-2 border-gray-200 rounded-md focus:border-indigo-800 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                    type="text"
+                    v-model="u.avatar"
+                  />
+                </div>
                 <div>
                   <label class="text-gray-900" >Mật khẩu</label>
                   <input
@@ -209,7 +218,7 @@ const u = {
       password: "",
       status: 1,
       address: "",
-      avatar: "https://png.pngtree.com/template/20190323/ourmid/pngtree-robot-logo-design-robot-logo-design-image_82095.jpg",
+      avatar: "",
 }
     const handleAddRescue = () =>{
       open =  ref(false);

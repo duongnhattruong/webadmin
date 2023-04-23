@@ -244,7 +244,7 @@
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
                         class="w-10 h-10 rounded-full"
-                        src="https://png.pngtree.com/template/20190323/ourmid/pngtree-robot-logo-design-robot-logo-design-image_82095.jpg"
+                        :src = "u.avatar"
                         alt=""
                       />
                     </div>
@@ -412,6 +412,7 @@ handleEdit(u){
      localStorage.setItem('phone', u.phone);
      localStorage.setItem('password', u.password);
      localStorage.setItem('address', u.address);
+     localStorage.setItem('avatar', u.avatar);
      if(u.status!=1)
         localStorage.setItem('status', 0);
      else
