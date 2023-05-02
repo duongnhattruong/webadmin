@@ -57,7 +57,7 @@ export default {
   },
 
   getThongKeDanhGia() {
-    return axios.get(API_URL + '/thongke-dg');
+    return axios.get(API_STAT + '/rating');
   },
 
   getHistory(start: string, end: string) {

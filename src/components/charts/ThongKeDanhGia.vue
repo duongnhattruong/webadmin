@@ -27,7 +27,7 @@ export default {
   },
   async mounted() {
     const response = await API.getThongKeDanhGia();
-    this.series = response.data;
+    this.series = response.data.data;
   }
 }
 </script>
